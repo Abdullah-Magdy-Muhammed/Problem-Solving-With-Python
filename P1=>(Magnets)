@@ -1,0 +1,13 @@
+n = int(input())
+string = ''
+group_count = 0
+for i in range(n):
+    num = input()
+
+    if i == 0 or num[0] == string[-1]:
+        string += num     
+        group_count += 1
+    else:
+        string += num
+
+print(group_count)
